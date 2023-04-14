@@ -8,7 +8,7 @@ SDLion is a Lua library for creating graphical applications using the Simple Dir
 
 ## Development
 
-Keep in mind that this project is in work, so if you want to see code, then it is in dev branch because the is no 'full version' of this project!
+Keep in mind that this project is in work, so if you want to see code, then it is in main branch but there is no 'full version' of this project! I'm working hard to make first alpha version of it!
 
 
 ## Installation
