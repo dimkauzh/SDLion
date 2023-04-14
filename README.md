@@ -6,6 +6,11 @@ SDLion is a Lua library for creating graphical applications using the Simple Dir
 
 
 
+## Development
+
+Keep in mind that this project is in work, so if you want to see code, then it is in dev branch because the is no 'full version' of this project!
+
+
 ## Installation
 
 Make sure you have SDL already installed and this is what you also need to install:
@@ -33,4 +38,3 @@ Coming soon when project is fully done
 
 ## 🚀 About Me
 A 13 year old game developer with much passion about the language lua
-
