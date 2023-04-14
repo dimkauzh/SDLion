@@ -2,9 +2,9 @@ local engine = require "engine.main"
 
 engine.init_all()
 
-local win = engine.create_window("game", 500, 400, "resizable")
+local win = engine.window.create_window("game", 500, 400, "resizable")
 
-local rdr = engine.createRenderer(win, -1, 0)
+local rdr = engine.window.createRenderer(win, -1, 0)
 
 
 local is_running = true
@@ -17,7 +17,7 @@ while is_running do
         end
     end
     
-    engine.newRectangle(win, rdr, "red", 2, 2, 100, 100)
+    engine.window.newRectangle(win, rdr, "red", 2, 2, 100, 100)
 end
 
 engine.quit()
