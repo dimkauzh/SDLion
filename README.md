@@ -1,5 +1,5 @@
 
-# SDLion
+# SDLion (NOT UNDER DEVELOPMENT ANYMORE)
 
 SDLion is a Lua library for creating graphical applications using the Simple DirectMedia Layer (SDL) library. It provides a simple interface for creating windows, rendering graphics, and handling user input. It just makes lua-sdl2 a lot easier
 
