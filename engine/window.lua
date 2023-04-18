@@ -13,15 +13,21 @@ local function create_window(title, width, height, flags)
     }
 end
 
-local function newRectangle(win, rdr, color, x, y, w, h)
+local function newRectangle(rdr, color, x, y, w, h)
 
-    if color == "red" then
-        rdr:setDrawColor(0xFFFFFF)
-    else
-        rdr:setDrawColor(0xFFFFFF)
-    end
+    --if color == "red" then
+    --rdr:setDrawColor(0xFFFFFF)
+    --else
+    rdr:setDrawColor(0xFFFFFF)
+    --end
 
     rdr:drawRect({x = x, y = y, w = w, h = h})
+    rdr:present()
+end
+
+local function setBackgroundColor(rdr, r, g, b, a)
+    rdr:setDrawColor(0xFFFFFF)
+    rdr:clear()
     rdr:present()
 end
 
@@ -32,5 +38,6 @@ end
 return {
     create_window = create_window,
     newRectangle = newRectangle,
-    createRenderer = createRenderer
+    createRenderer = createRenderer,
+    setBackgroundColor = setBackgroundColor,
 }
