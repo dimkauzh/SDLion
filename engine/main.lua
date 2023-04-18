@@ -1,11 +1,8 @@
 local sdl = require "SDL"
 local window = require "engine.window"
+local event = require "engine.event"
 
-local event = sdl.event
 local is_running = true
-
-local destroy_all = {}
-
 
 local function init_all()
     sdl.init{
@@ -13,10 +10,6 @@ local function init_all()
         sdl.flags.Audio,
         sdl.flags.Renderer,
     }
-end
-
-local function pollEvent()
-    return sdl.pollEvent()
 end
 
 local function quit()
@@ -29,6 +22,5 @@ return {
     init_all = init_all,
     is_running = is_running,
     quit = quit,
-    pollEvent = pollEvent,
-    sdl = sdl
+    sdl = sdl,
 }
